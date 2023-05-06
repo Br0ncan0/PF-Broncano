@@ -1,0 +1,14 @@
+
+/* Configuracion Galeria */
+.galeria{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-items: center;
+  
+  img{
+    width: 100%;
+    padding: 40px 10px 40px 10px;
+    align-self: center;
+  }
+}
+

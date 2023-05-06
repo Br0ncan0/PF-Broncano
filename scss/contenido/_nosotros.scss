@@ -1,0 +1,43 @@
+
+.contenido-nosotros{
+  display: flex;
+  align-items: center;
+  justify-items: center;
+  padding-top: 50px;
+}
+
+.imagen-nosotros{
+  width: 300%;
+  padding-right: 50px;
+}
+
+.contenido-nosotros-texto{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+}
+
+.texto-nosotros{
+  text-align: center;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+.contenido-empresa{
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.info-empresa{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+
+  img{
+    width: 100px;
+    justify-content: center;
+    padding-bottom: 20px;
+  }
+}

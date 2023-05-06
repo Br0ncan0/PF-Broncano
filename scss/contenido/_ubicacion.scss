@@ -1,0 +1,35 @@
+
+/* Configuracion ubicacion */
+
+.ubicacion{
+  display:flex;
+  align-content: center;
+  justify-content: center;
+}
+
+.ubicacion-imagen{
+  padding: 30px 60px 30px 60px;
+}
+
+.info{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  img{
+    width: 30px;
+    height: 30px;
+  }
+}
+
+.ubicacion-info{
+  p{
+    display: inline-flex;
+    padding-left: 20px;
+  }
+}
+
+.boton-ubicacion{
+  display: flex;
+  justify-content: center;
+}

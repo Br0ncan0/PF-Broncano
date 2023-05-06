@@ -1,0 +1,56 @@
+
+/* Media Queries */
+
+@media screen and (max-width: 800px){
+
+ .logo{
+    display:none;
+  }
+
+  .redes-nav{
+    img{
+      display: none;
+    }
+  }
+
+  .menu{
+    padding-top: 30px;
+  }
+
+  header{
+    nav{
+      justify-content: center;
+    }
+  }
+
+  .contenido{
+    display: grid;
+    padding: 50px;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: 0.2fr 1fr 0.2fr 1fr;
+    grid-template-areas: 
+      "ctitle"
+      "ctext"
+      "cboton"
+      "cimage";
+  }
+
+  f-logo{
+    width: 30px;
+    height: 30px;
+  } 
+
+  .footer-redes{
+    a{
+      img{
+        width: 30px;
+      }
+    }
+  }
+
+  .contenido-footer-info{
+    font-size: 12px;
+    align-self: center;
+  }
+}
+
