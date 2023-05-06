@@ -1,0 +1,174 @@
+/* Variables */
+/* Variables */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+/* Variables */
+/* Encabezado */
+header {
+  background-image: url("../multimedia/fondo4.jpg");
+  background-position: center;
+  background-size: cover;
+  height: auto;
+}
+header nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+header nav img {
+  width: 100px;
+}
+
+/* Menu */
+.menu {
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+}
+.menu li {
+  list-style-type: none;
+}
+.menu a {
+  text-decoration: none;
+  color: black;
+  text-transform: uppercase;
+  font-size: 20px;
+  font-weight: bold;
+}
+.menu a:hover {
+  text-decoration-line: underline;
+  text-decoration-color: white;
+  color: white;
+}
+
+.redes-nav img {
+  width: 40px;
+  padding: 10px;
+}
+
+/* Configuracion footer */
+footer {
+  display: flex;
+  justify-content: space-between;
+  height: 10%;
+  background-color: gray;
+}
+
+.footer-info {
+  display: flex;
+  align-items: center;
+}
+.footer-info p {
+  text-align: center;
+  align-items: center;
+  color: white;
+}
+
+.contenido-footer-info p {
+  padding: 0px;
+  margin: 0px;
+  text-align: center;
+}
+
+.footer-redes {
+  display: flex;
+}
+.footer-redes a {
+  align-self: center;
+}
+.footer-redes a img {
+  width: 40px;
+  padding-right: 10px;
+}
+
+.f-logo {
+  width: 100px;
+  height: 95%;
+}
+
+/* Configuracion de titulo */
+.title {
+  display: flex;
+  height: 80%;
+  justify-content: center;
+  align-items: center;
+}
+.title h1 {
+  text-align: center;
+  font-size: 150px;
+  color: white;
+}
+
+.contenido {
+  display: grid;
+  padding: 50px;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 0.2fr 1fr 0.2fr;
+  grid-template-areas: "ctitle ctitle" "ctext cimage" "cboton cimage";
+}
+.contenido h2 {
+  grid-area: ctitle;
+  text-align: center;
+  align-self: center;
+}
+.contenido p {
+  grid-area: ctext;
+  text-align: center;
+  padding: 20px;
+}
+.contenido a {
+  grid-area: cboton;
+  text-decoration: none;
+  color: white;
+  background-color: gray;
+  padding: 10px 40px;
+  border-radius: 10px;
+  justify-self: center;
+  align-self: center;
+}
+.contenido a:hover {
+  text-decoration-line: underline;
+  text-decoration-color: white;
+}
+
+.imagen-main {
+  grid-area: cimage;
+  background-image: url("../multimedia/fondo3.jpg");
+  background-position: center;
+  background-size: cover;
+  margin: 20px;
+}
+
+.marcas h2 {
+  text-align: center;
+  background-color: gray;
+  padding: 20px;
+  color: white;
+}
+.marcas .carrete {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 50px;
+}
+
+.carrete img {
+  width: 30%;
+}
+
+.maps {
+  display: flex;
+  width: auto;
+}
+.maps img {
+  width: 100%;
+  padding-bottom: 50px;
+}
+
+/*# sourceMappingURL=styles.css.map */

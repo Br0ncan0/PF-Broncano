@@ -1,0 +1,95 @@
+
+/* Configuracion de titulo */ 
+
+.title{
+  display: flex;
+  height: 80%;
+  justify-content: center;
+  align-items: center;
+  h1{
+    text-align: center;
+    font-size: 150px;
+    color: white;
+  }
+}
+
+
+.contenido{
+  display: grid;
+  padding: 50px;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 0.2fr 1fr 0.2fr;
+  grid-template-areas: 
+  "ctitle ctitle"
+  "ctext cimage"
+  "cboton cimage"
+  ;
+
+  h2{
+    grid-area: ctitle;
+    text-align: center;
+    align-self: center;
+  }
+
+  p{
+    grid-area: ctext;
+    text-align: center;
+    padding: 20px;
+  }
+
+  a{
+    grid-area: cboton;
+    text-decoration: none;
+    color: white;
+    background-color: gray;
+    padding: 10px 40px;
+    border-radius: 10px;
+    justify-self: center;
+    align-self: center;
+
+    &:hover{
+      text-decoration-line: underline;
+      text-decoration-color: white;
+    }
+  } 
+}
+
+.imagen-main{
+  grid-area: cimage;
+  background-image: $fondo-home;
+  background-position: center;
+  background-size: cover;
+  margin: 20px;
+}
+
+.marcas{
+  h2{
+    text-align: center;
+    background-color: gray;
+    padding: 20px;
+    color: white;
+  }
+  
+  .carrete{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 50px;
+  }
+}
+
+.carrete{
+  img{
+    width: 30%;
+  }
+}
+
+.maps{
+  display: flex;
+  width: auto;
+  img{
+    width: 100%;
+    padding-bottom: 50px;
+  }
+}
+

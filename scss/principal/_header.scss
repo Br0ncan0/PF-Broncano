@@ -1,0 +1,49 @@
+@import "variables";
+
+/* Encabezado */
+header{
+  background-image: $fondo-principal;
+  background-position: center;
+  background-size: cover;
+  height: auto;
+  nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    img{
+      width:100px;
+    }
+  }
+}
+
+/* Menu */
+
+.menu{
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+  li {
+    list-style-type: none;
+  }
+  a{
+    text-decoration: none;
+    color: black;
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: bold;
+    &:hover {
+      text-decoration-line: underline;  
+      text-decoration-color: white;
+      color:white;
+    }
+  }
+}
+
+.redes-nav{
+  img{
+    width: 40px;
+    padding: 10px;
+  }
+}
+
