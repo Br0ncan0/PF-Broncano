@@ -52,6 +52,18 @@ header nav img {
   padding: 10px;
 }
 
+.title {
+  display: flex;
+  height: 80%;
+  justify-content: center;
+  align-items: center;
+}
+.title h1 {
+  text-align: center;
+  font-size: 150px;
+  color: white;
+}
+
 /* Configuracion footer */
 footer {
   display: flex;
@@ -92,19 +104,7 @@ footer {
   height: 95%;
 }
 
-/* Configuracion de titulo */
-.title {
-  display: flex;
-  height: 80%;
-  justify-content: center;
-  align-items: center;
-}
-.title h1 {
-  text-align: center;
-  font-size: 150px;
-  color: white;
-}
-
+/* Configuracion de Inicio*/
 .contenido {
   display: grid;
   padding: 50px;
@@ -198,6 +198,9 @@ footer {
 }
 
 .contenido-empresa {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
   padding-top: 100px;
   padding-bottom: 100px;
 }

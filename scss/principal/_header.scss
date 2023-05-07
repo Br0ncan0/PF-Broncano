@@ -47,3 +47,15 @@ header{
   }
 }
 
+.title{
+  display: flex;
+  height: 80%;
+  justify-content: center;
+  align-items: center;
+  h1{
+    text-align: center;
+    font-size: 150px;
+    color: white;
+  }
+}
+
