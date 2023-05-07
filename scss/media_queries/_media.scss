@@ -1,7 +1,138 @@
-
 /* Media Queries */
 
-@media screen and (max-width: 800px){
+@import "../principal/variables";
+
+@media screen and (max-width: 1024px) and (min-width: 768px){
+  /* Media Querie Header - Tablet */
+  .menu{
+    a{
+      font-size: $letra-media-h2;
+      color: white;
+      &:hover{
+        color: black;
+        text-decoration-color: black;
+      }
+    }
+  }
+
+  .title{
+    h1{
+      font-size: $letra-media-h1;
+    }
+  }
+
+  /*Media Querie Inicio Tablet*/
+
+  .contenido{
+    grid-template-rows: 0.2fr 0.5fr 0.5fr 0.5fr 0.5fr 0.2fr;
+    grid-template-areas:
+    "ctitle ctitle"
+    "ctext ."
+    "ctext cimage"
+    "ctext cimage"
+    "ctext ."
+    "cboton cboton"
+    ; 
+
+    p{
+      font-size: $letra-media-p;
+    }
+  }
+
+  .marcas{
+    h2{
+      font-size: $letra-media-h2;
+    }
+  }
+
+  .carrete{
+    img{
+      width: 15%;
+    }
+  }
+
+  /* Media Querie Nosotros - Tablet*/
+
+  .contenido-nosotros-texto{
+    h2{
+      font-size: $letra-media-h2;
+    }
+
+    p{
+      font-size: $letra-media-p;
+    }
+  }
+
+  .info-empresa{
+    p{
+      font-size: $letra-media-p;
+    }
+  }
+
+  /* Media Querie Ubicacion - Tablet*/
+
+  .ubicacion-info{
+    display: flex;
+  }
+
+  .ubicacion-imagen{
+    padding-right: 40px;
+    padding-left: 40px;
+  }
+
+  .boton-ubicacion{
+    a{
+      button{
+        font-size: $letra-media-p;
+      }
+    }
+  }
+
+  .ubicacion-info{
+    p{
+      font-size: $letra-media-p;
+    }
+    img{
+      width: 15px;
+      height: 15px;
+    }
+  } 
+
+  /* Media Querie Contacto - Tablet */
+
+  .formulario{
+    form{
+      padding-bottom: 20px;
+    }
+  }
+
+  .boton-contacto{
+    padding-bottom: 20px;
+    padding-top: 40px;
+  }
+
+  /* Media Querie Footer - Tablet*/
+
+  .contenido-footer-info{
+    p{
+      font-size: $letra-media-p;
+    }
+  }
+
+  .footer-redes{
+    a{
+      img{
+        width: 30px;
+      }
+    }
+  }  
+  .f-logo{
+    width: 60px;
+  }
+}
+
+@media screen and (max-width: 767px){
+  /* Media Querie Header - Phone*/
 
  .logo{
     display:none;
@@ -14,6 +145,16 @@
   }
 
   .menu{
+    a{
+      font-size: $letra-media-h2;
+      color: white;
+      &:hover{
+        color: black;
+        text-decoration-color: black;
+      }
+    }
+  }
+  .menu{
     padding-top: 30px;
   }
 
@@ -23,9 +164,15 @@
     }
   }
 
+  .title{
+    h1{
+      font-size: $letra-media-h1;
+    }
+  }
+  
+  /* Media Querie Inicio - Phone*/
+
   .contenido{
-    display: grid;
-    padding: 50px;
     grid-template-columns: repeat(1, 1fr);
     grid-template-rows: 0.2fr 1fr 0.2fr 1fr;
     grid-template-areas: 
@@ -33,23 +180,152 @@
       "ctext"
       "cboton"
       "cimage";
+    p{
+      font-size: $letra-media-p;
+    }
   }
 
-  f-logo{
-    width: 30px;
-    height: 30px;
+   .marcas{
+    h2{
+      font-size: $letra-media-h2;
+    }
+  }
+
+  .carrete{
+    img{
+      width: 15%;
+    }
+  }
+
+  /* Media Querie Nosotros - Phone*/
+
+  .contenido-nosotros-texto{
+    h2{
+      font-size: $letra-media-h2;
+    }
+
+    p{
+      font-size: $letra-media-p;
+    }
+  }
+
+  .info-empresa{
+    p{
+      font-size: $letra-media-p;
+    }
+  }
+
+  .contenido-nosotros{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: 0.2fr 1fr;
+    grid-template-areas:
+    "ncontenido"
+    "nimagen"
+    ;
+    .contenido-nosotros-texto{
+      grid-area: ncontenido;
+    }
+  }
+
+  .imagen-nosotros{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    img{
+      grid-area: nimagen;
+      width: 300px;
+    }
+  }
+
+  .info-empresa{
+    img{
+      width: 80px;
+    }
+  }
+
+  /* Media Querie Ubicacion - Phone */
+
+  .ubicacion{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 0.5fr;
+    grid-template-areas: 
+    "uimagen"
+    "uinfo"
+    ;
+    .ubicacion-imagen{
+      grid-area: uimagen;
+      padding-top: 0px;
+    }
+    .info{
+      grid-area: uinfo;
+    }
+  }
+
+  .ubicacion-info{
+    display: flex;
+    justify-content: center;
+  }
+
+  .ubicacion-imagen{
+    padding-right: 40px;
+    padding-left: 40px;
+  }
+
+  .boton-ubicacion{
+    a{
+      button{
+        font-size: $letra-media-p;
+      }
+    }
+  }
+
+  .ubicacion-info{
+    p{
+      font-size: $letra-media-p;
+    }
+    img{
+      width: 15px;
+      height: 15px;
+    }
   } 
 
+  /* Media Querie Contacto - Phone */
+
+  .formulario{
+    form{
+      padding-bottom: 20px;
+    }
+    img{
+      display: none;
+    }
+  }
+
+  .boton-contacto{
+    padding-bottom: 20px;
+    padding-top: 40px;
+  }
+
+
+
+
+  /* Media Querie Footer - Phone*/
   .footer-redes{
     a{
       img{
         width: 30px;
       }
     }
-  }
+  }  
+
+  f-logo{
+    width: 30px;
+    height: 30px;
+  } 
 
   .contenido-footer-info{
-    font-size: 12px;
+    font-size: $letra-media-p;
     align-self: center;
   }
 }

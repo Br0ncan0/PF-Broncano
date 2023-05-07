@@ -239,6 +239,9 @@ footer {
 .ubicacion-imagen {
   padding: 30px 60px 30px 60px;
 }
+.ubicacion-imagen img {
+  width: 100%;
+}
 
 .info {
   display: flex;
@@ -281,13 +284,96 @@ footer {
   padding: 20px 0px 20px 0px;
 }
 
-/* Media Queries */
-@media screen and (max-width: 800px) {
+/* Media Queries */ /* Variables */
+@media screen and (max-width: 1024px) and (min-width: 768px) {
+  /* Media Querie Header - Tablet */
+  .menu a {
+    font-size: 15px;
+    color: white;
+  }
+  .menu a:hover {
+    color: black;
+    text-decoration-color: black;
+  }
+  .title h1 {
+    font-size: 100px;
+  }
+  /*Media Querie Inicio Tablet*/
+  .contenido {
+    grid-template-rows: 0.2fr 0.5fr 0.5fr 0.5fr 0.5fr 0.2fr;
+    grid-template-areas: "ctitle ctitle" "ctext ." "ctext cimage" "ctext cimage" "ctext ." "cboton cboton";
+  }
+  .contenido p {
+    font-size: 12px;
+  }
+  .marcas h2 {
+    font-size: 15px;
+  }
+  .carrete img {
+    width: 15%;
+  }
+  /* Media Querie Nosotros - Tablet*/
+  .contenido-nosotros-texto h2 {
+    font-size: 15px;
+  }
+  .contenido-nosotros-texto p {
+    font-size: 12px;
+  }
+  .info-empresa p {
+    font-size: 12px;
+  }
+  /* Media Querie Ubicacion - Tablet*/
+  .ubicacion-info {
+    display: flex;
+  }
+  .ubicacion-imagen {
+    padding-right: 40px;
+    padding-left: 40px;
+  }
+  .boton-ubicacion a button {
+    font-size: 12px;
+  }
+  .ubicacion-info p {
+    font-size: 12px;
+  }
+  .ubicacion-info img {
+    width: 15px;
+    height: 15px;
+  }
+  /* Media Querie Contacto - Tablet */
+  .formulario form {
+    padding-bottom: 20px;
+  }
+  .boton-contacto {
+    padding-bottom: 20px;
+    padding-top: 40px;
+  }
+  /* Media Querie Footer - Tablet*/
+  .contenido-footer-info p {
+    font-size: 12px;
+  }
+  .footer-redes a img {
+    width: 30px;
+  }
+  .f-logo {
+    width: 60px;
+  }
+}
+@media screen and (max-width: 767px) {
+  /* Media Querie Header - Phone*/
   .logo {
     display: none;
   }
   .redes-nav img {
     display: none;
+  }
+  .menu a {
+    font-size: 15px;
+    color: white;
+  }
+  .menu a:hover {
+    color: black;
+    text-decoration-color: black;
   }
   .menu {
     padding-top: 30px;
@@ -295,19 +381,105 @@ footer {
   header nav {
     justify-content: center;
   }
+  .title h1 {
+    font-size: 100px;
+  }
+  /* Media Querie Inicio - Phone*/
   .contenido {
-    display: grid;
-    padding: 50px;
     grid-template-columns: repeat(1, 1fr);
     grid-template-rows: 0.2fr 1fr 0.2fr 1fr;
     grid-template-areas: "ctitle" "ctext" "cboton" "cimage";
   }
+  .contenido p {
+    font-size: 12px;
+  }
+  .marcas h2 {
+    font-size: 15px;
+  }
+  .carrete img {
+    width: 15%;
+  }
+  /* Media Querie Nosotros - Phone*/
+  .contenido-nosotros-texto h2 {
+    font-size: 15px;
+  }
+  .contenido-nosotros-texto p {
+    font-size: 12px;
+  }
+  .info-empresa p {
+    font-size: 12px;
+  }
+  .contenido-nosotros {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: 0.2fr 1fr;
+    grid-template-areas: "ncontenido" "nimagen";
+  }
+  .contenido-nosotros .contenido-nosotros-texto {
+    grid-area: ncontenido;
+  }
+  .imagen-nosotros {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+  .imagen-nosotros img {
+    grid-area: nimagen;
+    width: 300px;
+  }
+  .info-empresa img {
+    width: 80px;
+  }
+  /* Media Querie Ubicacion - Phone */
+  .ubicacion {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 0.5fr;
+    grid-template-areas: "uimagen" "uinfo";
+  }
+  .ubicacion .ubicacion-imagen {
+    grid-area: uimagen;
+    padding-top: 0px;
+  }
+  .ubicacion .info {
+    grid-area: uinfo;
+  }
+  .ubicacion-info {
+    display: flex;
+    justify-content: center;
+  }
+  .ubicacion-imagen {
+    padding-right: 40px;
+    padding-left: 40px;
+  }
+  .boton-ubicacion a button {
+    font-size: 12px;
+  }
+  .ubicacion-info p {
+    font-size: 12px;
+  }
+  .ubicacion-info img {
+    width: 15px;
+    height: 15px;
+  }
+  /* Media Querie Contacto - Phone */
+  .formulario form {
+    padding-bottom: 20px;
+  }
+  .formulario img {
+    display: none;
+  }
+  .boton-contacto {
+    padding-bottom: 20px;
+    padding-top: 40px;
+  }
+  /* Media Querie Footer - Phone*/
+  .footer-redes a img {
+    width: 30px;
+  }
   f-logo {
     width: 30px;
     height: 30px;
-  }
-  .footer-redes a img {
-    width: 30px;
   }
   .contenido-footer-info {
     font-size: 12px;
