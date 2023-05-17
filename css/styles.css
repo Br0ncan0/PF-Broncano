@@ -54,7 +54,7 @@ header nav img {
 
 .title {
   display: flex;
-  height: 80%;
+  height: 800px;
   justify-content: center;
   align-items: center;
 }
@@ -109,8 +109,8 @@ footer {
   display: grid;
   padding: 50px;
   grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: 0.2fr 1fr 0.2fr;
-  grid-template-areas: "ctitle ctitle" "ctext cimage" "cboton cimage";
+  grid-template-rows: 0.2fr 2fr 2fr 2fr 2fr 2fr;
+  grid-template-areas: "ctitle ctitle" ". cimage" "ctext cimage" "ctext cimage" "ctext cimage" "cboton cimage";
 }
 .contenido h2 {
   grid-area: ctitle;

@@ -5,9 +5,12 @@
   display: grid;
   padding: 50px;
   grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: 0.2fr 1fr 0.2fr;
+  grid-template-rows: 0.2fr 2fr 2fr 2fr 2fr 2fr;
   grid-template-areas: 
   "ctitle ctitle"
+  ". cimage"
+  "ctext cimage"
+  "ctext cimage"
   "ctext cimage"
   "cboton cimage"
   ;
@@ -21,6 +24,7 @@
   p{
     grid-area: ctext;
     text-align: center;
+    
     padding: 20px;
   }
 
